@@ -26,7 +26,7 @@ class ContactController extends Controller
     public function send(Request $request)
     {
  Mail::to('tota@example.com')->send(New sendmail($request->name,$request->subject,$request->contact,$request->email));
-return 'done';
+return 'Done';
     }
     /**
      * Store a newly created resource in storage.
